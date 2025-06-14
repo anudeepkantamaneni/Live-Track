@@ -15,3 +15,82 @@ Historical data storage for review and health analytics
 Scalable web interface optimized for control rooms
 
 This solution provides a new layer of safety and responsibility in aviation—a live health window into the cockpit, without ever interfering with the pilot's workflow.
+
+ 1. Smartwatch or Health Tracking Device
+Best Option: Garmin or Apple Watch (with HealthKit API)
+
+Garmin is highly accurate for heart rate and stress (HRV-based), with good developer API access.
+
+Apple Watch offers excellent ecosystem integration and HealthKit API, great for medical-grade data.
+
+✅ Garmin recommended for industrial/aviation use (rugged, long battery, accurate).
+
+✅ 2. Stress Level Indicators to Track
+Reliable and scientifically backed:
+
+Heart Rate (HR) – Base metric, available on all wearables.
+
+Heart Rate Variability (HRV) – Primary stress indicator.
+
+ECG (Electrocardiogram) – For advanced tracking; supported by Apple Watch Series 4+.
+
+Optional: Breathing rate or skin temperature.
+
+🔹 Use HR + HRV for stress + fatigue detection.
+🔹 Use ECG only if medically approved access is needed.
+
+✅ 3. Who Will Access the Website
+Recommended:
+
+Airline Operations Team
+
+Aviation Medical Officer (optional access)
+
+Auto-alert systems with thresholds (e.g., heart rate > 120 bpm triggers alert)
+
+🔐 Include role-based access control: Admin / Viewer / Medical.
+
+✅ 4. Data Storage or Only Live Monitoring?
+Suggested: Store data + show real-time
+
+Store encrypted biometric data in a secure DB (PostgreSQL or Firebase).
+
+Useful for:
+
+Medical review
+
+Pattern analysis
+
+Safety audits
+
+🔐 Use GDPR & HIPAA-compliant methods if dealing with health data.
+
+✅ 5. Platform: Web Dashboard or Mobile App?
+Recommended: Start with Web Dashboard
+
+Easier to build, deploy, and monitor in control rooms.
+
+Use responsive design (desktop + tablet views).
+
+📱 Mobile App: Optional in Phase 2 (for pilots or mobile health access).
+
+✅ 6. Tech Stack Recommendation
+Frontend:
+
+React.js + Tailwind CSS
+
+Live charts: Recharts or Chart.js
+
+Real-time data: Socket.IO or Firebase Realtime DB
+
+Backend:
+
+Node.js + Express
+
+Database: Firebase Firestore or PostgreSQL
+
+WebSocket or MQTT for a live data stream
+
+Authentication: Firebase Auth or Auth0
+
+Cloud Hosting: Vercel (Frontend) + Render or Google Cloud (Backend)
