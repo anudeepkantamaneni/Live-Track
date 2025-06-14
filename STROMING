@@ -1,0 +1,17 @@
+In high-stakes aviation environments, a pilot’s health is critical. This system is designed to track a pilot’s heartbeat and stress levels in real time using a wearable smartwatch (such as Garmin or Apple Watch). The biometric data is streamed directly to a secure, web-based dashboard accessible to the airline’s operations or medical team.
+
+The main goal is to ensure flight safety and pilot well-being by monitoring vitals like heart rate and heart rate variability (HRV), which indicate stress and fatigue. If the system detects unusual readings (like abnormally high heart rate), it can instantly trigger alerts, allowing ground personnel to respond proactively.
+
+Key features include:
+
+Live heart rate and stress level visualization
+
+Secure login for authorized airline staff
+
+Real-time alerts for abnormal health signals
+
+Historical data storage for review and health analytics
+
+Scalable web interface optimized for control rooms
+
+This solution provides a new layer of safety and responsibility in aviation—a live health window into the cockpit, without ever interfering with the pilot's workflow.
